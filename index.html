@@ -336,10 +336,6 @@
                                 <li>타이어 강성 연구</li>
                             </ul>
                         </div>
-                    </div>
-
-                    <!-- 학력 사항 -->
-                    <div>
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Education</h3>
                         <div class="bg-white p-6 rounded-lg shadow-md">
                             <div class="mb-6">
@@ -805,31 +801,6 @@
             
             return projects[projectId] || { title: 'Project Not Found', content: '<p>프로젝트 정보를 찾을 수 없습니다.</p>' };
         }
-
-        // (선택 사항) 다크 모드 토글
-        /*
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
-        const htmlElement = document.documentElement;
-
-        // 로컬 스토리지에서 다크 모드 설정 불러오기
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            htmlElement.classList.add('dark');
-        }
-
-        function toggleDarkMode() {
-            htmlElement.classList.toggle('dark');
-            // 로컬 스토리지에 다크 모드 설정 저장
-            if (htmlElement.classList.contains('dark')) {
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                localStorage.setItem('darkMode', 'disabled');
-            }
-        }
-
-        if (darkModeToggle) darkModeToggle.addEventListener('click', toggleDarkMode);
-        if (darkModeToggleMobile) darkModeToggleMobile.addEventListener('click', toggleDarkMode);
-        */
     </script>
 </body>
 </html>
