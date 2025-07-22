@@ -4,68 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="zxPksh-FgQtJpLW5GJYWZ0GweKZtvpvxVwjpbWXREl4" />
-    <title>조한슬 - 개발자 포트폴리오</title>
-    
-    <!-- Favicon -->
+    <title>HanSeul Jo - Developer Portfolio</title>
     <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml">
     <link rel="shortcut icon" href="./assets/favicon.svg?v=2" type="image/svg+xml">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
-<body class="bg-gray-50 text-gray-700 antialiased">
+<body>
 
-    <nav class="bg-white/80 backdrop-blur-md shadow-md fixed w-full z-50 top-0">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold text-sky-600">AI Backend Dev 조한슬</a>
-                <div class="hidden md:flex space-x-4">
-                    <a href="#about" class="text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">About</a>
-                    <a href="#skills" class="text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Skills</a>
-                    <a href="#projects" class="text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Projects</a>
-                    <a href="#experience" class="text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Experience</a>
-                    <a href="#contact" class="text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Contact</a>
-                    </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-sky-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div id="mobile-menu" class="mobile-menu md:hidden mt-2">
-                <a href="#about" class="block text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">About</a>
-                <a href="#skills" class="block text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Skills</a>
-                <a href="#projects" class="block text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Projects</a>
-                <a href="#experience" class="block text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Experience</a>
-                <a href="#contact" class="block text-gray-600 hover:text-sky-600 px-3 py-2 rounded-md">Contact</a>
-                </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo">HanSeul Jo</div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <a href="">Blog</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main class="pt-20"> <section id="about" class="py-20 bg-sky-50">
-            <div class="container mx-auto px-6 text-center">
-                <img src="./assets/profile.png" alt="프로필 사진" class="w-48 h-48 rounded-full mx-auto mb-8 shadow-lg object-cover object-center" style="object-position: 50% 30%;">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">안녕하세요, 조한슬입니다.</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-                    백엔드 개발자라는 배경을 바탕으로,</br>
-                    AI 기술을 실제 비즈니스 솔루션으로 변환하는 데 열정을 가진 생성형 AI 솔루션 개발자입니다.</br>
-                    생성형 AI 기술의 혁신적인 잠재력을 인식하고 독립적으로 전문성을 추구해왔습니다.</br>
-                    현재는 RAG 시스템 기반의 생성형 AI 솔루션과 LLMOps 개발에 매진하고 있습니다.
-                </p>
-                <a href="#projects" class="bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300">
-                    Projects<i class="fas fa-arrow-right ml-2"></i>
-                </a>
+    <main>
+        <section class="section hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <div class="tag">Evolving ...</div>
+                        <h1>Backend Engineer, <br>pioneering<br> RAG and LLMOps</h1>
+                        <p>Specializing in AI model serving, scalable infra,<br> and real-world deployment of LLM systems</p>
+                        <a href="#contact" class="cta-button">Contact me<span>→</span></a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="개발 환경 이미지">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="skills" class="py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h3 class="text-3xl font-bold text-gray-800 mb-6">Skills</h3>
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-intro">
+                    <div class="tag">About Me</div>
+                    <h2>Passionate problem solver and lifelong learner.</h2>
+                    <p>With a strong foundation in backend engineering, I specialize in building scalable infrastructures and deploying LLM systems in real-world environments. I’m passionate about solving complex problems at the intersection of AI, RAG (Retrieval-Augmented Generation), and LLMOps, and continuously strive to bridge research and production with practical, high-impact solutions.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Years of experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Projects completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2025-</h3>
+                        <p>Team Lead</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Passionate about learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container container mx-auto px-6 text-center">
+                <div class="tag">My Skills</div>
+            </div>
+            <div class="container container mx-auto px-6 text-center">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 justify-items-center">
                     <div class="skill-item">
                         <i class="fab fa-python text-5xl text-sky-500 mb-4"></i>
@@ -111,215 +125,147 @@
             </div>
         </section>
 
-        <section id="projects" class="py-20 bg-sky-50">
-            <div class="container mx-auto px-6">
-                <h3 class="text-center text-3xl font-bold text-gray-800 mb-6">Projects</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-                    <!-- AI PaaS - LLMOps Preview Card -->
-                    <div class="project-preview-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                            <i class="fas fa-cloud text-6xl text-white"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">AI PaaS - LLMOps</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                LLM Serving, Chatbot App builder 등 LLM 솔루션 개발 및 운영을 위한 환경을 제공하는 AI PaaS 솔루션
-                            </p>
-                            <button onclick="openProjectModal('aipaas')" class="w-full border-2 border-sky-600 text-sky-600 hover:border-sky-700 hover:text-sky-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
-                                Details <i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- On-Device RAG Preview Card -->
-                    <div class="project-preview-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
-                            <i class="fas fa-mobile-alt text-6xl text-white"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">On-Device RAG</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                On-Device 환경에서 동작하는 Chatbot을 No-Code로 개발하고 배포하는 솔루션
-                            </p>
-                            <button onclick="openProjectModal('ondevice')" class="w-full border-2 border-sky-600 text-sky-600 hover:border-sky-700 hover:text-sky-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
-                                Details <i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 다양한 도메인의 질의 응답 PoC Preview Card -->
-                    <div class="project-preview-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="h-48 bg-gradient-to-br flex items-center justify-center">
-                            <img src="./assets/projects/domainpoc.png" alt="ChatBot PoC" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">AI ChatBot PoC</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                법무법인, 세무법인, 바이오/제약, 공장 등 다양한 도메인의 질의 응답 PoC 수행
-                            </p>
-                            <button onclick="openProjectModal('domainqa')" class="w-full border-2 border-sky-600 text-sky-600 hover:border-sky-700 hover:text-sky-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
-                                Details <i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- RAG 기반 문서 생성 솔루션 Preview Card -->
-                    <div class="project-preview-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="h-48 bg-gradient-to-br flex items-center justify-center">
-                            <img src="./assets/projects/docgen.png" alt="RAG 기반 문서 생성 솔루션" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">RAG 기반 문서 생성 솔루션</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                RAG 파이프라인을 활용한 지능형 문서 자동 생성 시스템으로, 표, 차트, 그래프를 포함한 문서 생성
-                            </p>
-                            <button onclick="openProjectModal('docgen')" class="w-full border-2 border-sky-600 text-sky-600 hover:border-sky-700 hover:text-sky-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
-                                Details <i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- AI 교과서 챗봇 Preview Card -->
-                    <div class="project-preview-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="h-48 bg-gradient-to-br flex items-center justify-center">
-                            <img src="./assets/projects/aitextbook.png" alt="AI교과서 영어챗봇" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">AI 교과서 영어챗봇</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                초등 저학년 영어 단어 학습을 위한 형태소 검색 기반 챗봇 개발
-                            </p>
-                            <button onclick="openProjectModal('aitextbook')" class="w-full border-2 border-sky-600 text-sky-600 hover:border-sky-700 hover:text-sky-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
-                                Details <i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- AI 계약관리시스템 Preview Card -->
-                    <div class="project-preview-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="h-48 bg-gradient-to-br flex items-center justify-center">
-                            <img src="./assets/projects/contract.png" alt="AI 계약관리시스템" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">AI 계약관리시스템</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                계약서 템플릿을 활용한 손쉬운 작성과 계약서 Life Cycle 관리 시스템 백엔드 개발
-                            </p>
-                            <button onclick="openProjectModal('contract')" class="w-full border-2 border-sky-600 text-sky-600 hover:border-sky-700 hover:text-sky-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
-                                Details <i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <section id="projects" class="section projects">
+            <div class="container" style="text-align: center;">
+                <div class="tag">My Work</div>
+                <h2>Projects</h2>
+                <p>My recent projects</p>
             </div>
         </section>
 
-        <!-- Project Details Modal -->
-        <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
-            <div class="bg-white rounded-xl max-w-4xl max-h-[90vh] overflow-y-auto w-full">
-                <div class="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center">
-                    <h2 id="modalTitle" class="text-2xl font-bold text-gray-800"></h2>
-                    <button onclick="closeProjectModal()" class="text-gray-500 hover:text-gray-700 text-2xl">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div id="modalContent" class="p-6">
-                    <!-- Modal content will be inserted here -->
-                </div>
-            </div>
+        <section id="experience" class="section experience">
+            <div class="container experience-grid">
+  <div class="exp-left">
+    <div class="tag">Work</div>
+    <ul class="exp-list">
+      <li>
+        <div class="exp-job">
+          <img src="./assets/ci/surromind.png" alt="써로마인드 CI" class="exp-logo">
+          <div class="exp-main">
+            <div class="exp-company">SURROMIND Inc.</div>
+            <div class="exp-role">LLM Solution Team Lead</div>
+            <div class="exp-period">2020.10 - Present</div>
+            <p>
+                * On-Device RAG Solution Development
+            </p>
+            <p>
+                * AI PaaS - LLMOps Development
+            </p>
+            <p>
+                * Q&A System PoC (Accounting Firm, Law Firm, Bio/Pharmaceutical)
+            </p>
+            <p>
+                * Document Generation Solution Prototype, RAG Pipeline/Document Generator Development
+            </p>
+            <p>
+                * CJ One AI Contract Management System Backend Development
+            </p>
+          </div>
         </div>
-
-        <section id="experience" class="py-20">
-            <div class="container mx-auto px-6">
-                <!-- <h2 class="section-title">Experience 및 학력</h2> -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Experience 사항 -->
-                    <div class="space-y-6">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Experience</h3>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <div class="flex justify-between items-start">
-                                <div class="flex items-center gap-4">
-                                    <img src="./assets/ci/surromind.png" alt="써로마인드 CI" class="w-12 h-12 object-contain">
-                                    <div>
-                                        <h3 class="text-xl font-bold text-sky-700">(주)써로마인드</h3>
-                                        <p class="text-gray-600 font-semibold">AI Backend Developer, LLM 솔루션팀</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-500 text-sm">[근무 기간: 2020.10 - 재직중]</p>
-                            </div>
-                            <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2">
-                                <li>On-Device RAG 솔루션 개발</li>
-                                <li>AI PaaS - LLMOps 개발</li>
-                                <li>질의 응답 시스템 PoC (세무법인, 법무법인, 바이오/제약) 수행</li>
-                                <li>문서 생성 솔루션 프로토타입, RAG 파이프라인/문서 생성기 개발</li>
-                                <li>CJ제일제당 AI 계약관리스템 백엔드 개발</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <div class="flex justify-between items-start">
-                                <div class="flex items-center gap-4">
-                                    <img src="./assets/ci/hyosung.jpg" alt="효성첨단소재 CI" class="w-12 h-12 object-contain">
-                                    <div>
-                                        <h3 class="text-xl font-bold text-sky-700">(주)효성첨단소재</h3>
-                                        <p class="text-gray-600 font-semibold">연구원, 타이어보강재PU 강선연구소</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-500 text-sm">[근무 기간: 2018.01 - 2018.10]</p>
-                            </div>
-                            <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2">
-                                <li>스틸코드 신규격 개발</li>
-                                <li>타이어 강성 연구</li>
-                            </ul>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Education</h3>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <div class="mb-6">
-                                <div class="flex items-center gap-4">
-                                    <img src="./assets/ci/knu.jpg" alt="경북대학교 CI" class="w-12 h-12 object-contain">
-                                    <div>
-                                        <h3 class="text-xl font-bold text-sky-700">경북대학교</h3>
-                                        <p class="text-gray-600">[기계공학부 기계설계학] (학사)</p>
-                                        <p class="text-gray-500 text-sm">[2012.03 ~ 2018.02]</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </li>
+      <li>
+        <div class="exp-job">
+          <img src="./assets/ci/hyosung.jpg" alt="효성첨단소재 CI" class="exp-logo">
+          <div class="exp-main">
+            <div class="exp-company">Hyosung Advanced Materials</div>
+            <div class="exp-role">Research Engineer, Tire Reinforcement Material Development Center</div>
+            <div class="exp-period">2018.01 - 2018.10</div>
+            <p>
+                * Steel Code Development
+            </p>
+            <p>
+                * Tire Strength Research
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="tag" style="margin-top:40px;">Education</div>
+    <ul class="edu-list">
+      <li>
+        <div class="exp-job">
+          <img src="./assets/ci/knu.jpg" alt="경북대학교 CI" class="exp-logo">
+          <div class="exp-main">
+            <div class="exp-company">KyungPook National University</div>
+            <div class="exp-role">Mechanical Engineering</div>
+            <div class="exp-period">2012.03 ~ 2018.02</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="exp-right">
+    <div class="tag">Certifications</div>
+    <ul class="cert-list">
+      <li>
+        <div class="cert-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="정보처리기사" class="cert-icon">
+          <div>
+            <div class="cert-name">example</div>
+            <div class="cert-date">example</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="cert-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="SQLD" class="cert-icon">
+          <div>
+            <div class="cert-name">example</div>
+            <div class="cert-date">example</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
         </section>
 
-        <section id="contact" class="py-20">
-            <div class="container mx-auto px-6 text-center">
-                <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
-                    새로운 기회에 대해 이야기 나누는 것을 환영합니다.
-                </p>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                    <a href="mailto:bryantjo1224@gmail.com" class="flex items-center text-lg text-sky-600 hover:text-sky-700 transition duration-300">
-                        <i class="fas fa-envelope mr-3 text-2xl"></i> bryantjo1224@gmail.com
-                    </a>
-                    <a href="https://github.com/Seuleeee" target="_blank" class="flex items-center text-lg text-gray-700 hover:text-sky-600 transition duration-300">
-                        <i class="fab fa-github mr-3 text-2xl"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/hanseul-jo-446528301" target="_blank" class="flex items-center text-lg text-blue-700 hover:text-blue-800 transition duration-300">
-                        <i class="fab fa-linkedin mr-3 text-2xl"></i> LinkedIn
-                    </a>
-                    <!--
-                    <a href="path/to/your_resume.pdf" download="조한슬_이력서.pdf" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center">
-                        <i class="fas fa-download mr-2"></i> 이력서 다운로드
-                    </a>
-                    -->
-                </div>
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="tag">Contact</div>
+<h2>Let's Create Together</h2>
+<p>I welcome the opportunity to discuss new opportunities.</p>
+<div class="contact-links">
+    <a href="mailto:bryantjo1224@gmail.com" class="cta-button flex items-center text-lg text-sky-600 hover:text-sky-700 transition duration-300">
+        <i class="fas fa-envelope mr-3 text-2xl"></i> E-Mail
+    </a>
+    <a href="https://www.linkedin.com/in/hanseul-jo-446528301" target="_blank" class="cta-button flex items-center text-lg text-blue-700 hover:text-blue-800 transition duration-300">
+        <i class="fab fa-linkedin mr-3 text-2xl"></i> LinkedIn
+    </a>
+    <a href="https://github.com/Seuleeee" target="_blank" class="cta-button flex items-center text-lg text-gray-700 hover:text-sky-600 transition duration-300">
+        <i class="fab fa-github mr-3 text-2xl"></i> GitHub
+    </a>
+</div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-8 text-center">
-        <div class="container mx-auto px-6">
-            <p>&copy; <span id="currentYear"></span> 조한슬. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>조한슬 (HanSeul Jo)</p>
+            <p>&copy; 2025 HanSeul Jo. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            header.addEventListener('click', () => {
+                // 클릭된 아이템이 이미 active 상태인지 확인
+                const isActive = item.classList.contains('active');
+
+                // 모든 아이템에서 active 클래스 제거 (하나만 열리게 하려면)
+                accordionItems.forEach(i => i.classList.remove('active'));
+
+                // 클릭된 아이템이 active가 아니었다면 active 클래스 추가
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
