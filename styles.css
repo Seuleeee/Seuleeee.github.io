@@ -1,0 +1,64 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+.section-title {
+    /* Tailwind 적용 시 @apply 사용 불가, 아래 스타일로 대체 */
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1e293b;
+}
+.card {
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    transform: translateY(-2px);
+}
+.tag {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.project-card {
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.project-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    transform: translateY(-4px);
+    border-color: #0ea5e9;
+}
+.skill-item {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+.skill-item:hover {
+    background: rgba(255,255,255,0.9);
+    transform: translateY(-1px);
+}
+.mobile-menu {
+    display: none;
+}
+.mobile-menu.active {
+    display: block;
+}
+/* 다크모드 등 주석처리된 부분은 필요시 추가 */
